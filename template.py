@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import logging
 
-project_name = "datascince"
+project_name = "datascience"
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
