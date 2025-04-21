@@ -1,5 +1,5 @@
 from src.datascience import logger
-from src.datascience.config.configration import ConfigurationManager
+from src.datascience.config.configuration import ConfigurationManager
 from src.datascience.components.data_validation import DataValiadtion
 
 
