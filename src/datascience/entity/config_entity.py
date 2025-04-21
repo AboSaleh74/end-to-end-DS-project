@@ -29,3 +29,14 @@ class modelTrainerConfig:
     aplha : float
     l1_ratio : float
     target_column : str
+    
+@dataclass
+class ModelEvaluationConfig:
+    """Model Evaluation Configuration"""
+    root_dir : Path
+    test_data_path : Path
+    model_path : Path
+    all_params : dict
+    report_file_path : Path
+    target_column : str
+    mlflow_uri : str
