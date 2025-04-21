@@ -19,3 +19,13 @@ class DataValidationConfig:
 class DataTransformationConfig:
     root_dir : Path
     data_dir : Path
+    
+@dataclass
+class modelTrainerConfig:
+    root_dir : Path
+    train_data_dir : Path
+    test_data_dir : Path
+    model_name : str
+    aplha : float
+    l1_ratio : float
+    target_column : str

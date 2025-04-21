@@ -1,6 +1,6 @@
 from src.datascience.constants import *
 from src.datascience.utils.common import read_yaml, create_directories
-from src.datascience.entity.config_entity import (DataIngestionConfig,DataValidationConfig,DataTransformationConfig)
+from src.datascience.entity.config_entity import (DataIngestionConfig,DataValidationConfig,DataTransformationConfig,modelTrainerConfig)
 
 class ConfigurationManager:
     def __init__(self,
@@ -59,7 +59,24 @@ class ConfigurationManager:
         return data_transformation_config
 
 
-    
+    def get_model_trainer_config(self) -> modelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params.ElasticNet
+        schema = self.schema.TARGET_COLUMN
+        
+        create_directories([config.root_dir])
+        
+        model_trainer_config = modelTrainerConfig(
+            root_dir = config.root_dir,
+            train_data_dir = config.train_data_path,
+            test_data_dir = config.test_data_path,
+            model_name = config.model_name,
+            aplha = params.alpha,
+            l1_ratio = params.l1_ratio,
+            target_column = schema.name
+        )
+        
+        return model_trainer_config
 
 
 
