@@ -28,12 +28,12 @@ pip install -r requirements
 python app.py
 
 ```
-
 ## photo from web page
 
-![](images\webpage.png)
+![webpage](https://github.com/user-attachments/assets/b6e08739-9eb2-448c-a0a8-4d0fc3a69de4)
+
 
 
 # Don't forget to Star the Repo
 
-![](images\star.gif)
+![star](https://github.com/user-attachments/assets/9d56d5d2-697b-452a-a9b2-497456e565cb)
