@@ -23,7 +23,7 @@
 ```
 git clone https://github.com/AboSaleh74/end-to-end-DS-project.git
 
-pip install -r requirements
+pip install -r requirements.txt
 
 python app.py
 
