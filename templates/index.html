@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wine Quality Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Enter Wine Features</h1>
+
+    <form method="POST">
+        <input type="number" name="fixed_acidity" step="any" placeholder="Fixed Acidity" required>
+        <input type="number" name="volatile_acidity" step="any" placeholder="Volatile Acidity" required>
+        <input type="number" name="citric_acid" step="any" placeholder="Citric Acid" required>
+        <input type="number" name="residual_sugar" step="any" placeholder="Residual Sugar" required>
+        <input type="number" name="chlorides" step="any" placeholder="Chlorides" required>
+        <input type="number" name="free_sulfur_dioxide" step="any" placeholder="Free Sulfur Dioxide" required>
+        <input type="number" name="total_sulfur_dioxide" step="any" placeholder="Total Sulfur Dioxide" required>
+        <input type="number" name="density" step="any" placeholder="Density" required>
+        <input type="number" name="pH" step="any" placeholder="pH" required>
+        <input type="number" name="sulphates" step="any" placeholder="Sulphates" required>
+        <input type="number" name="alcohol" step="any" placeholder="Alcohol" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction is not none %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+
+    
+    <hr>
+<div style="margin-top: 20px;">
+    <p>Follow me on:</p>
+    <a href="https://www.linkedin.com/in/abo-saleh/" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/AboSaleh74" target="_blank">GitHub</a>
+</div>
+
+</body>
+</html>

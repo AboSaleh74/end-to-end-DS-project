@@ -18,3 +18,22 @@
 6. Update the components
 7. Update the pipeline 
 8. Update the main.py
+
+## Run App 
+```
+git clone https://github.com/AboSaleh74/end-to-end-DS-project.git
+
+pip install -r requirements
+
+python app.py
+
+```
+
+## photo from web page
+
+![](images\webpage.png)
+
+
+# Don't forget to Star the Repo
+
+![](images\star.gif)
