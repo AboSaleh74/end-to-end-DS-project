@@ -30,7 +30,6 @@ python app.py
 ```
 
 ## photo from web page
-![webpage](https://github.com/user-attachments/assets/35cf762e-b326-4fc5-9727-cc00bc50b2c4)
 
 
 # Don't forget to Star the Repo
